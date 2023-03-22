@@ -1,0 +1,24 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.content h2 {
+  background-color: #3795BD;
+  color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.lorem {
+  flex-direction: column;
+  margin: 5px 25px;
+  display: flex;
+  width: 80%;
+  color:#aecef3;
+}
+
+
