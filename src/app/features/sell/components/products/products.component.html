@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div *ngFor="let item of products" class="container">
+  <div class="col">
+    <div class="card">
+      <img src="{{ item.imagem }}" width="100px" height="150px">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.descricao }}</h5>
+        <button (click)="detalhesProduto(item.id)">Detalhes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+

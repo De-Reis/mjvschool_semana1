@@ -1,24 +1,27 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { PrincipalComponent } from './principal/principal.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
+import { SellModule } from './features/sell/sell.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    PrincipalComponent,
-    FooterComponent,
-    HomeComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    SellModule,
+    FormsModule
+
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

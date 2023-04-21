@@ -1,0 +1,14 @@
+<nav>
+  <div class="title">
+    <h2>Pet Store</h2>
+    <img src="../../assets/icon.caes.png" width="120" height="105" alt="ícone cão">
+  </div>
+  <ul class="menu">
+    <li class="link" [routerLink]="['/']">Home</li>
+    <li *ngIf="user" class="link" (click)="navigateByUrl('produtos')">Produtos</li>
+    <li *ngIf="!user" class="link" (click)="navigateByUrl('login')">Login</li>
+    <li *ngIf="user" (click)="exit()" class="link" (click)="navigateByUrl('login')">Sair</li>
+  </ul>
+
+</nav>
+

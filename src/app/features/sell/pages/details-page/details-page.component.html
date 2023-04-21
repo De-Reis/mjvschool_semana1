@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div ng-if="product">
+  <div class="col">
+    <div class="card">
+      <img src="{{ product?.imagem }}" width="100px" height="150px">
+      <div class="card-body">
+        <h5 class="card-title">{{ product?.descricao }}</h5>
+        <p class="card-price">Preço: {{ product?.preco | currency: 'R$'}}</p>
+        <p class="card-quantidade">Em estoque: {{ product?.quantidade }}</p>
+        <button class="link" (click)="navigateByUrl('produtos')">Voltar</button>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
